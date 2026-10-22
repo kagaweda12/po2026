@@ -9,10 +9,10 @@ public class Lotto2 {
             System.out.println("Proszę podać dokładnie 6 liczb");
             return;
         }
-        ArrayList<Integer> typy = new ArrayList<>(); // lista typow
+        ArrayList<Integer> wybrane = new ArrayList<>(); // lista typow
 
         for(int i = 0; i < args.length; i++) { // dodawanie argumentow tekstowyh do listy
-            typy.add(Integer.parseInt(args[i]));
+            wybrane.add(Integer.parseInt(args[i])); // ze stringa na integer
         }
         Random l = new Random();
         ArrayList<Integer> wylosowane = new ArrayList<>();
@@ -23,11 +23,11 @@ public class Lotto2 {
                 wylosowane.add(liczba);
             }
         }
-        System.out.println("Typy uzytkownika: " + typy);
+        System.out.println("Typy uzytkownika: " + wybrane);
         System.out.println("Wylosowane liczby: " + wylosowane);
 
         // kopia listy typow aby moc zliczyc trafienia
-        ArrayList<Integer> trafienia = new ArrayList<>(typy);
+        ArrayList<Integer> trafienia = new ArrayList<>(wybrane);
 
         // sprawdzenie ktore elementy z typow sa w wylsoowane i je zostawiamy w trafieniach
         trafienia.retainAll(wylosowane);
