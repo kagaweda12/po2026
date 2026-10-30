@@ -7,31 +7,29 @@ public class CodingBatTest {
 
     @org.junit.Test
     public void nearHundred() {
-        assertEquals(true, cb.nearHundred(150));
-        assertEquals(true, cb.nearHundred(120));
-        assertEquals(true, cb.nearHundred(210));
+        assertTrue(cb.nearHundred(90));
+        assertTrue(cb.nearHundred(93));
+        assertFalse(cb.nearHundred(89));
     }
 
     @org.junit.Test
     public void sleepIn() {
-        assertEquals(true, cb.sleepIn(true, true));
-        assertEquals(true, cb.sleepIn(false, true));
-        assertEquals(true, cb.sleepIn(false, false));
+        assertTrue(cb.sleepIn(true, true));
+        assertTrue(cb.sleepIn(false, true));
+        assertTrue(cb.sleepIn(false, false));
     }
 
     @org.junit.Test
     public void diff21() {
-        assertEquals(true, cb.diff21(21));
-        assertEquals(true, cb.diff21(13));
-        assertEquals(true, cb.diff21(211));
-
+        assertEquals(2, cb.diff21(19));
+        assertEquals(11, cb.diff21(10));
+        assertEquals(0, cb.diff21(21));
     }
 
     @org.junit.Test
     public void stringTimes() {
-        assertEquals(true, cb.stringTimes("Hi", 2));
-        assertEquals(true, cb.stringTimes("Hi", 2));
-        assertEquals(true, cb.stringTimes("Hi", 2));
-
+        assertEquals("HiHi", cb.stringTimes("Hi", 2));
+        assertEquals("HiHiHi", cb.stringTimes("Hi", 3));
+        assertEquals("Hi", cb.stringTimes("Hi", 1));
     }
 }
