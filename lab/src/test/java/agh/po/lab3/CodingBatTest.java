@@ -110,4 +110,11 @@ public class CodingBatTest {
 
         assertEquals(expected, cb.wordMultiple(input));
     }
+    @org.junit.Test
+    public void stringTimes() {
+        CodingBat cb = new CodingBat();
+        assertEquals("HiHiHi", cb.stringTimes("Hi", 3));
+        assertEquals("HiHi", cb.stringTimes("Hi", 2));
+        assertEquals("Hi", cb.stringTimes("Hi", 1));
+    }
 }

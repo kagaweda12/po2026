@@ -15,9 +15,11 @@ public class CodingBat {
         System.out.println("Po:    " + cb.mapAB3(testMap));
     }
     public boolean nearHundred(int n) {
+
         return Math.abs(100 - n) <= 10 || Math.abs(200 - n) <= 10;
     }
     public boolean sleepIn(boolean weekday, boolean vacation) {
+
         return !weekday || vacation;
     }
     public static int diff21(int n) {
@@ -48,6 +50,7 @@ public class CodingBat {
     }
 
     public String stringTimes(String str, int n) {
+
         return str.repeat(n);
     }
 }
