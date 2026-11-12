@@ -1,0 +1,16 @@
+package agh.po.animals;
+
+public abstract class Animal {
+    protected String name;
+    protected int legs;
+
+    public Animal(String name, int legs) { //konsruktor
+        this.name = name;
+        this.legs = legs;
+    }
+
+    public int getLegs() {
+        return legs;
+    }
+    public abstract String getDescription();
+}
