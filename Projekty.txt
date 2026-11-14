@@ -110,3 +110,4 @@ Komunikator tekstowy klient-serwer z szyfrowaniem wiadomości z wykorzystaniem R
 50) Rekreacja gry Bomberman (NES 1985) - Kamil Deptalski, indywidualnie
 
 51) Anonimowy czat wykładowy - anonimowe zadawanie pytań wykładowcy, ankieta poziomu zrozumienia
+Kamil Gawęda, Jakub Czupryna
